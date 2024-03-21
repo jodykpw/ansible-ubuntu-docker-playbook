@@ -1,0 +1,24 @@
+---
+- name: Configure apt
+  block:
+    - name: Disable upgrades for specific packages.
+      ansible.builtin.dpkg_selections:
+        name: "{{ item }}"
+        selection: hold
+      loop: "{{ update_excluded_packages }}"
+
+    - name: Update all software
+      ansible.builtin.apt:
+        update_cache: true
+        upgrade: "{{ update_upgrade_command }}"
+        cache_valid_time: "{{ update_cache_valid_time }}"
+      environment:
+        DEBIAN_FRONTEND: nointeractive
+
+    - name: APT autoremove
+      ansible.builtin.apt:
+        autoremove: "{{ update_autoremove }}"
+      when:
+        - update_autoremove
+      environment:
+        DEBIAN_FRONTEND: nointeractive

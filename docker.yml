@@ -1,0 +1,6 @@
+- hosts: localhost
+  become: true
+  vars_files:
+    - group_vars/docker.yml
+  roles:
+    - ansible-role-docker

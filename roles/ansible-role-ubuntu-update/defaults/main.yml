@@ -1,0 +1,18 @@
+---
+# If true, remove unused dependency packages for all module states except build-dep. 
+# It can also be used as the only option.
+update_autoremove: false
+
+# apt_upgrade type which can be: dist, full, yes, or safe
+update_upgrade_command: dist
+
+# Update the apt cache if it is older than the cache_valid_time. This option is set in seconds.
+update_cache_valid_time: 1
+
+# Names specific packages from being updated.
+# Example
+# update_excluded_packages:
+#   - kernel*
+#   - docker*
+#   - kube*
+update_excluded_packages: []
