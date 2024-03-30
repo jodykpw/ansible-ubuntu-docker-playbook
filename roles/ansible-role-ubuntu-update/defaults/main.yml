@@ -12,7 +12,9 @@ update_cache_valid_time: 1
 # Names specific packages from being updated.
 # Example
 # update_excluded_packages:
-#   - kernel*
-#   - docker*
-#   - kube*
+#   - linux-image-generic
+#   - linux-headers-generic
+#   - docker.io
+#   - kubeadm
+#   - kubelet
 update_excluded_packages: []

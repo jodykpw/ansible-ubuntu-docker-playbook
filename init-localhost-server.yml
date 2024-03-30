@@ -1,4 +1,4 @@
 - hosts: localhost
   become: true
   roles:
-    - ansible-role-update
+    - ansible-role-ubuntu-update

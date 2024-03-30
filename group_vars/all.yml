@@ -11,9 +11,11 @@ update_cache_valid_time: 1
 
 # Names specific packages from being updated.
 update_excluded_packages:
-  - kernel*
-  - docker*
-  - kube*
+  - linux-image-generic
+  - linux-headers-generic
+  - docker.io
+  - kubeadm
+  - kubelet
 
 
 # Ansible Role: Reboot
