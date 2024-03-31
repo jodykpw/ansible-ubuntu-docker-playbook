@@ -17,7 +17,7 @@ Based on [Ansible Best Practices: Sample directory layout](https://docs.ansible.
 Example
 
 ```console
-ansible-playbook init-localhost-server.yml -i hosts.ini
+ansible-playbook init-server.yml -i hosts.ini
 ```
 
 ## 📚 Available playbooks
