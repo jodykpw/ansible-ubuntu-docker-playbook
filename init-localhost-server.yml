@@ -1,7 +1,0 @@
----
-- hosts: localhost
-  become: true
-  roles:
-    # - ansible-role-ubuntu-update
-    # - ansible-role-apt-package_install
-    - ansible-role-snap-package_install

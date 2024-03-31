@@ -9,9 +9,10 @@ Based on [Ansible Best Practices: Sample directory layout](https://docs.ansible.
 
 1. `git clone --recursive` this repository.
 2. Go to the cloned folder.
-3. Editing the group_vars files, you can customize variables specific to different groups of hosts in your Ansible inventory. These variables will be applied when running playbooks or tasks that target the corresponding group of hosts.
-4. Select a playbook (see [`Available playbooks`](https://github.com/truewebartisans/useful-playbooks#-available-playbooks) section).
-5. Run `<playbook_name>` -i `<inventory_name>`
+3. Editing playbook yml, ensure set hosts correctly.
+4. Editing the group_vars files, you can customize variables specific to different groups of hosts in your Ansible inventory. These variables will be applied when running playbooks or tasks that target the corresponding group of hosts.
+5. Select a playbook (see [`Available playbooks`](https://github.com/truewebartisans/useful-playbooks#-available-playbooks) section).
+6. Run `<playbook_name>` -i `<inventory_name>`
 
 Example
 
@@ -21,9 +22,7 @@ ansible-playbook init-localhost-server.yml -i hosts.ini
 
 ## 📚 Available playbooks
 
-- 📖 `init-localhost-server.yml` Is an Ansible playbook tailored for deploying configurations and initializing services on the local machine itself. 
-
-- 📖 `init-remote-server.yml` Is an Ansible playbook designed for remote server initialization and configuration. 
+- 📖 `init-server.yml` Is an Ansible playbook designed for server initialization and configuration. 
 
 - 📖 `docker.yml` Integrated with the [geerlingguy/ansible-role-docker](https://github.com/geerlingguy/ansible-role-docker).
 

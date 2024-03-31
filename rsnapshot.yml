@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: remote
   become: true
   vars_files:
     - group_vars/mount.yml
