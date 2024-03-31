@@ -1,0 +1,5 @@
+---
+- hosts: remote
+  become: true
+  roles:
+    - ansible-role-reboot
