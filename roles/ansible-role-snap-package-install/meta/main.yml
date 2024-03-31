@@ -1,11 +1,11 @@
 ---
 galaxy_info:
   author: Jody WAN
-  description: Ansible role for managing system reboots
+  description: An Ansible role to install specified packages and gather package facts.
   linkedin: https://www.linkedin.com/in/jodywan/
   website: https://www.jodywan.com
-  license: "license (BSD, MIT)"
-  min_ansible_version: 2.10
+  license: MIT
+  min_ansible_version: 2.12
   platforms:
     - name: EL
       versions:
@@ -14,7 +14,6 @@ galaxy_info:
       versions:
         - jammy
   galaxy_tags:
-    - system
-    - server
-    - reboot
-    - maintenance
+    - apt
+    - package
+    - installer

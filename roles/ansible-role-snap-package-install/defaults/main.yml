@@ -1,0 +1,6 @@
+---
+snap_packages_to_install:
+  - name: kubectl
+    classic: true
+  - name: helm
+    classic: true

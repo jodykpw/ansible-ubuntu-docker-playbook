@@ -1,0 +1,8 @@
+---
+package_list:
+  - net-tools
+  - netcat
+  - iftop
+  - glances
+  - nfs-common
+  - jq

@@ -1,5 +1,5 @@
 ---
-# If true, remove unused dependency packages for all module states except build-dep. 
+# If true, remove unused dependency packages for all module states except build-dep.
 # It can also be used as the only option.
 update_autoremove: false
 

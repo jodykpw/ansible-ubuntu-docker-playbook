@@ -1,0 +1,16 @@
+---
+- name: Install snap packages
+  community.general.snap:
+    name: "{{ item.name }}"
+    classic: "{{ item.classic | default(false) }}"
+  loop: "{{ snap_packages_to_install }}"
+
+- name: Gather information about installed snap packages
+  ansible.builtin.shell: snap list | grep "{{ item.name }}"
+  register: installed_snap_info
+  loop: "{{ snap_packages_to_install }}"
+  ignore_errors: true
+
+- name: Print debug output for installed snap packages
+  ansible.builtin.debug:
+    var: installed_snap_info
