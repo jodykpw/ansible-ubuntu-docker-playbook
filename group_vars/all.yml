@@ -9,7 +9,7 @@ update_upgrade_command: dist
 # Update the apt cache if it is older than the cache_valid_time. This option is set in seconds.
 update_cache_valid_time: 1
 
-# Names specific packages from being updated.
+# The name of the specific package will be excluded from the update.
 update_excluded_packages:
   - linux-image-generic
   - linux-headers-generic
